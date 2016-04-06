@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/FBReaderForAs.iml" filepath="$PROJECT_DIR$/FBReaderForAs.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fBReader/fBReader.iml" filepath="$PROJECT_DIR$/fBReader/fBReader.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fBReader_AmbilWarna/fBReader_AmbilWarna.iml" filepath="$PROJECT_DIR$/fBReader_AmbilWarna/fBReader_AmbilWarna.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fBReader_DragSortListView/fBReader_DragSortListView.iml" filepath="$PROJECT_DIR$/fBReader_DragSortListView/fBReader_DragSortListView.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fBReader_FileChooser/fBReader_FileChooser.iml" filepath="$PROJECT_DIR$/fBReader_FileChooser/fBReader_FileChooser.iml" />
+      <module fileurl="file://$PROJECT_DIR$/myLib/myLib.iml" filepath="$PROJECT_DIR$/myLib/myLib.iml" />
+    </modules>
+  </component>
+</project>
