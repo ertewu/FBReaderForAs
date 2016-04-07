@@ -27,6 +27,7 @@
 
 #include <shared_ptr.h>
 
+//ZYTag,在这里写几个类 ,这是什么意思?
 class Book;
 class BookModel;
 class FileEncryptionInfo;

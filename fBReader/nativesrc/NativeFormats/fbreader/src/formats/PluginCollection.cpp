@@ -38,6 +38,7 @@
 //#include "openreader/OpenReaderPlugin.h"
 #include "doc/DocPlugin.h"
 
+//ZYTag: 这他妈的0算是个什么回事? 不过一个指标被设为0了,也算可以理解..
 PluginCollection *PluginCollection::ourInstance = 0;
 
 PluginCollection &PluginCollection::Instance() {

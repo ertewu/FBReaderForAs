@@ -28,6 +28,7 @@ extern "C"
 JNIEXPORT jobjectArray JNICALL Java_org_geometerplus_fbreader_formats_PluginCollection_nativePlugins(JNIEnv* env, jobject thiz) {
 	const std::vector<shared_ptr<FormatPlugin> > plugins = PluginCollection::Instance().plugins();
 	const std::size_t size = plugins.size();
+	//ZYTag: what's this exactly mean ?我猜想,这是在找一个java类
 	jclass cls = AndroidUtil::Class_NativeFormatPlugin.j();
 	// TODO: memory leak?
 	jobjectArray javaPlugins = env->NewObjectArray(size, cls, 0);
