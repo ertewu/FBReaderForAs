@@ -43,6 +43,7 @@ template<class T> class shared_ptr_storage {
 template<class T> class weak_ptr;
 
 template<class T> class shared_ptr {
+
 	friend class weak_ptr<T>;
 
 	private:
@@ -79,9 +80,11 @@ template<class T> class shared_ptr {
 		bool operator > (const shared_ptr<T> &t) const;
 		bool operator <= (const shared_ptr<T> &t) const;
 		bool operator >= (const shared_ptr<T> &t) const;
+
 };
 
 template<class T> class weak_ptr {
+
 	friend class shared_ptr<T>;
 	private:
 		shared_ptr_storage<T> *myStorage;
@@ -142,6 +145,7 @@ template<class T>
 inline void shared_ptr_storage<T>::removeReference() {
 	--myCounter;
 	if (myCounter == 0) {
+		//ZYTag 为什么要这么用? myPointer=0算是什么,delete ptr又算什么
 		T* ptr = myPointer;
 		myPointer = 0;
 		delete ptr;

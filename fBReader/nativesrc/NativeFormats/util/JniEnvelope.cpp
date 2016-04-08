@@ -219,13 +219,15 @@ jobjectArray ObjectArrayMethod::call(jobject base, ...) {
 	ZLLogger::Instance().println(JNI_LOGGER_CLASS, "calling ObjectArrayMethod " + myName);
 	va_list lst;
 	va_start(lst, base);
+	//ZYTag 这里是call函数的实现部分,mark一下
 	jobjectArray result = (jobjectArray)AndroidUtil::getEnv()->CallObjectMethodV(base, myId, lst);
 	va_end(lst);
 	ZLLogger::Instance().println(JNI_LOGGER_CLASS, "finished ObjectArrayMethod " + myName);
 	return result;
 }
 
-StaticObjectMethod::StaticObjectMethod(const JavaClass &cls, const std::string &name, const JavaClass &returnType, const std::string &parameters) : StaticMethod(cls, name, returnType, parameters) {
+StaticObjectMethod::StaticObjectMethod(const JavaClass &cls, const std::string &name, const JavaClass &returnType, const std::string &parameters) :
+		StaticMethod(cls, name, returnType, parameters) {
 }
 
 jobject StaticObjectMethod::call(...) {
